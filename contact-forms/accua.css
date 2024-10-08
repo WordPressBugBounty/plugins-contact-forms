@@ -1,0 +1,54 @@
+#icon-contact-forms-cimatti-logo {
+    background: url("img/cimatti-icon-32.png") no-repeat scroll 0 0 transparent;
+}
+
+#accua-forms-graph-content {
+  padding:20px;
+}
+
+#accua-form-report-graph {
+  height: 300px;
+}
+
+#version, #version a {
+  color:#aaa;
+}
+
+
+.accua_forms_trash{
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    color: #cf0000;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.postbox {
+    padding: 20px;
+}
+.metabox-holder .postbox>h3, .metabox-holder .stuffbox>h3, .metabox-holder h2.hndle, .metabox-holder h3.hndle {
+    font-size: initial !important;
+}
+
+#update-nag, .update-nag{
+    display: none !important;
+}
+
+table.table_last_submit, table.table_submit {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_last_submit td, .table_last_submit th, .table_submit td, .table_submit th {
+    border: 1px solid #e5e5e5;
+    text-align: left;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.table_last_submit tr:nth-child(even), .table_submit tr:nth-child(even) {
+    background-color: #fcfcfc;
+}

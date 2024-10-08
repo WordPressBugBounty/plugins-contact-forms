@@ -1,0 +1,11 @@
+<svg viewBox='-5 -5 10 10' xmlns='http://www.w3.org/2000/svg'>
+    <style>
+        svg{animation:r 1.4s linear infinite}
+        @keyframes r{to{transform:rotate(270deg)}}
+        circle{animation:d 1.4s ease-in-out infinite}
+        @keyframes d{50%{transform:rotate(135deg);stroke-dashoffset:8}
+        to{transform:rotate(450deg)}
+        from,to{stroke-dashoffset:28}}
+    </style>
+    <circle fill='none' stroke-dasharray='30' stroke-dashoffset='8' stroke='#3366aa' r='4'/>
+</svg>

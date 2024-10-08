@@ -1,0 +1,1066 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-27 12:17+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Marina Caputo <marina.caputo@cimatti.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\Accua 07_08\\27_06_2013\\accua-forms\\\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: D:\\Accua 07_08\\27_06_2013\\accua-forms\n"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:45
+msgid "Restore"
+msgstr "Restaurar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:51
+msgid "Edit"
+msgstr "Editar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:52
+msgid "Clone"
+msgstr "Clonar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:53
+msgid "Report"
+msgstr "Reportar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:54
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:287
+msgid "Trash"
+msgstr "Papelera de Reciclaje"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:87
+msgid "Title"
+msgstr "Título"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:89
+msgid "Shortcode"
+msgstr "Código corto"
+
+msgid "PHP code"
+msgstr "Código PHP"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:90
+msgid "Number of publish Pages"
+msgstr "Número de publicaciones por páginas"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:91
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:48
+msgid "Submissions"
+msgstr "Envios"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:183
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:197
+msgid "(no title)"
+msgstr "(Sin título)"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-list-page.php:284
+msgid "Active"
+msgstr "Activo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:52
+msgid "Form ID"
+msgstr "ID del formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:53
+msgid "Page ID"
+msgstr "ID de la página"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:55
+msgid "Page"
+msgstr "Página"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:56
+msgid "Referrer"
+msgstr "Referido"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:57
+msgid "Language"
+msgstr "Lenguaje"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:58
+msgid "Opened"
+msgstr "Abierto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:59
+msgid "Submitted"
+msgstr "Enviado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:67
+msgid "removed"
+msgstr "Eliminado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:371
+msgid "Forms Submissions"
+msgstr "Formularios enviados"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:410
+msgid "Use the screen options to add or remove columns from the table below. Only the visible columns will be exported."
+msgstr "Utilice las opciones de la pantalla para agregar o eliminar columnas de la tabla de abajo. Sólo se exportarán las columnas visibles."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:415
+msgid "Search"
+msgstr "Búsqueda"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:440
+msgid "Page: "
+msgstr "Página:"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:441
+msgid "Show all pages"
+msgstr "Mostrar todas las páginas"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:451
+msgid "Forms: "
+msgstr "Formularios:"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:452
+msgid "Show all forms"
+msgstr "Mostrar todos los formularios:"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:479
+msgid "Filter"
+msgstr "Filtro"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms-submissions-page.php:506
+msgid "Export to excel"
+msgstr "Exportar a Excel"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:43
+msgid "Add new form"
+msgstr "Adicionar nuevo formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:43
+msgid "Add new"
+msgstr "Adicionar nuevo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:48
+msgid "Forms submissions"
+msgstr "Envíos de formularios"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:51
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:812
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1338
+msgid "Form fields"
+msgstr "Campos del formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:51
+msgid "Fields"
+msgstr "Campos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:54
+msgid "Accua Forms settings"
+msgstr "Configuración de Accua Forms "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:54
+msgid "Settings"
+msgstr "Configuración "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:60
+msgid "Month"
+msgstr "Mes"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:61
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:114
+msgid "Unique submissions"
+msgstr "Presentaciones únicas"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:62
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:115
+msgid "Total submissions"
+msgstr "Total de presentaciones"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:373
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:440
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1899
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2163
+msgid "Custom HTML content"
+msgstr "Contenido HTML personalizado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:375
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1901
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2165
+msgid "Use this special field to inject raw HTML in the form. You can use this multiple times."
+msgstr "Utilice este campo especial para inyectar HTML puro en el formulario. Usted puede utilizar esto varias veces."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:430
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1378
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1388
+msgid "Label"
+msgstr "Etiqueta"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:431
+msgid "override"
+msgstr "Sobrescribir"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:432
+msgid "Default value"
+msgstr "Valor por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:433
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1567
+msgid "Default value(s)"
+msgstr "Valor(es) por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:434
+msgid "For multiple default values, use | as separator."
+msgstr "Para múltiples valores por defecto utilice | como separador."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:435
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1573
+msgid "Allowed values"
+msgstr "Valores permitidos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:436
+msgid "The possible values this field can contain. Enter one value per line, in the format key|label. The key is the value that will be stored in the database. The label is optional, and the key will be used as the label if no label is specified."
+msgstr "Los posibles valores que este campo puede contener. Entre un valor por línea, en el formato llave|etiqueta. La llave es el valor que puede ser almacenado en la base de datos. La etiqueta es opcional y la llave puede ser usada como etiqueta en caso de que la etiqueta no se haya especificado."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:437
+msgid "Allowed extensions"
+msgstr "Extensiones permitidas"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:438
+msgid "Accepted file extensions. One per line, without dots."
+msgstr "Extensiones de archivo aceptadas. Una por línea"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:439
+msgid "Required"
+msgstr "Requiere"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:441
+msgid "Remove"
+msgstr "Eliminar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:442
+msgid "Close"
+msgstr "Cerrar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:443
+msgid "Save"
+msgstr "Salvar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:601
+msgid "Create a form"
+msgstr "Crear formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:611
+msgid "Empty form"
+msgstr "Formulario vacío"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:612
+msgid "Clone form:"
+msgstr "Formulario clonado:"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:626
+msgid "Create"
+msgstr "Creado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:638
+msgid "Form already exists"
+msgstr "El formulario ya existe"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:640
+msgid "Source form doesn't exists."
+msgstr "El formulario de origen no existe"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:644
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:646
+msgid "clone"
+msgstr "clonar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:667
+#, php-format
+msgid "Form \"%s\" deleted"
+msgstr "Formulario \"%s\" eliminado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:685
+msgid "Only letters, numbers, hyphen and underscores allowed in form identificative name"
+msgstr "Solo letras, número, guión y guiones bajos están permitidos en los nombres identificativos dentro del formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:688
+msgid "The identificative name can't start with two underscores (__)"
+msgstr "El nombre identificativo no puede comenzar con dos guiones bajos (__)"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:691
+msgid "You cannot use more than 70 characters for the identificative name"
+msgstr "Usted no puede usar más de 70 caracteres en un nombre identificativo "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:708
+msgid "Accua Forms"
+msgstr "Accua Forms"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:709
+msgid "Add New"
+msgstr "Adicionar Nuevo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:711
+msgid "Use shortcode, php or javascript to include the forms in posts, pages or other content types"
+msgstr "Utilice el código corto, php o javascript para incluir los post en el formulario, páginas u otros tipos de contenidos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:759
+msgid "Edit Form"
+msgstr "Editar Formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:761
+msgid "Enter title here"
+msgstr "Introduzca el título aquí"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:782
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:796
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1667
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1680
+msgid "Layout"
+msgstr "Disposición"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:783
+msgid "Messages"
+msgstr "Mensajes"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:784
+msgid "Preview/Test"
+msgstr "Ver/Probar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:787
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1033
+msgid "Save settings"
+msgstr "Salvar la configuración"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:789
+msgid "Do you really want to delete this form?"
+msgstr "¿Usted realmente desea eliminar este formulario?"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:792
+msgid "Delete this form"
+msgstr "Eliminar este formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:797
+msgid "Labels on the left of the fields"
+msgstr "Las etiquetas a la izquierda de los campos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:797
+msgid "Labels on top of the fields"
+msgstr "Las etiquetas encima de los campos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:798
+msgid "Use AJAX to avoid page reload when submitting form"
+msgstr "Utilice AJAX para evitar la recarga de la página cuando se envíe el formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:816
+msgid "Drop fields here"
+msgstr "Coloque campos aquí"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:849
+msgid "Available fields"
+msgstr "Campos disponibles"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:851
+msgid "Drag fields from here to a sidebar on the right to activate them. Drag fields back here to deactivate them."
+msgstr "Arrastre los campos de aquí a una barra lateral a la derecha para activarlos. Arrastre los campos de nuevo aquí para desactivarlos."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:852
+msgid "Create new fields here"
+msgstr "Crear nuevos campos aquí"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:901
+msgid "Token"
+msgstr "Token"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:915
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1693
+msgid "1. On-screen success message"
+msgstr "1. Mensaje de confirmación en pantalla"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:918
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:937
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:975
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1007
+msgid "Use the default message"
+msgstr "Utilice el mensaje por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:919
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:938
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:958
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:964
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:971
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:976
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:997
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1003
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1008
+msgid "Customize"
+msgstr "Personalizado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:920
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:939
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:977
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1009
+msgid "Nessun messaggio"
+msgstr "No hay mensajes"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:922
+msgid "Default Success message"
+msgstr "Mensaje Satisfactorio por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:934
+msgid "2. On-screen error message"
+msgstr "2. Mensaje de error en la pantalla"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:941
+msgid "Default error message"
+msgstr "Mensaje de error por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:952
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1715
+msgid "3. Email  to notify administrator"
+msgstr "3. Mensaje de notificación al administrador"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:955
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1718
+msgid "To"
+msgstr "Para"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:961
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1723
+msgid "Bcc"
+msgstr "Copia oculta"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:968
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1000
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1728
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1750
+msgid "Subject"
+msgstr "Asunto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:979
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1011
+msgid "Default message"
+msgstr "Mensaje por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:991
+msgid "4. Email confirmation to the person who completed the form "
+msgstr "4. Mensaje de confirmación a la persona que ha completado el formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:994
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1745
+msgid "From"
+msgstr "De"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1029
+msgid "Se hai fatto modifiche, salva prima le modifiche poi"
+msgstr "Si han realizado cambios, guardar los cambios antes de esa fecha"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1030
+msgid "ricarica la pagina"
+msgstr "recargar la página"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1271
+#, php-format
+msgid "Field \"%s\" updated"
+msgstr "Campo \"%s\" actualizado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1274
+#, php-format
+msgid "Field \"%s\" deleted"
+msgstr "Campo \"%s\" eliminado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1283
+msgid "Only letters, numbers, hyphen and underscores allowed in field identificative slug"
+msgstr "Solo se permiten letras, números, guiones y guiones bajos en los slug identificativos de campos "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1287
+msgid "The field identificative slug can't start with two underscores (__)"
+msgstr "El slug identificativo del campo puede comenzar con 2 guiones bajos (__)"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1291
+#, php-format
+msgid "<p>A field with identificative slug \"%s\" already exists</p> Field \"%s\" deleted"
+msgstr "<p>Un campo con ese slug identificativo \"%s\" ya existe</p> Campo\"%s\" borrado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1295
+msgid "The identificative slug cannot be longer than 70 characters"
+msgstr "El slug identificativo no puede tener más de 70 caracteres"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1309
+#, php-format
+msgid "Field \"%s\" created"
+msgstr "Campo \"%s\" creado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1327
+#, php-format
+msgid "Field \"%s\" doesn't exists"
+msgstr "Campo \"%s\" no existe"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1379
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1389
+msgid "Description"
+msgstr "Descripción"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1380
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1390
+msgid "Slug"
+msgstr "Slug"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1381
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1391
+msgid "Type"
+msgstr "Tipo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1487
+msgid "Text Field"
+msgstr "Campo de Texto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1488
+msgid "Text Area"
+msgstr "Área de Texto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1490
+msgid "Autoreply Email"
+msgstr "Respuesta automática de Email"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1491
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1492
+msgid "Select"
+msgstr "Seleccionar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1493
+msgid "Radio buttons"
+msgstr "Radio buttons"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1494
+msgid "Multiple selections area"
+msgstr "Área de selección múltiple"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1495
+msgid "Multiple checkboxes"
+msgstr "checkboxes múltiples "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1496
+msgid "Hidden value"
+msgstr "Valores ocultos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1497
+msgid "File upload"
+msgstr "Subir archivos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1498
+msgid "Submit button"
+msgstr "Botón enviar"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1499
+msgid "Custom HTML"
+msgstr "HTML personalizado"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1500
+msgid "Captcha"
+msgstr "Captcha"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1502
+msgid "Password and password confirmation"
+msgstr "Contraseña y confirmar contraseña"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1508
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1587
+msgid "Add new field"
+msgstr "Adicionar un nuevo campo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1508
+msgid "Edit field"
+msgstr "Editar campo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1519
+msgid "Field label"
+msgstr "Etiqueta campo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1521
+msgid "The name is how it appears on your site."
+msgstr "El nombre es cómo aparece en su sitio."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1525
+msgid "Field slug (identificative)"
+msgstr "Slug del campo (identificativo)"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1528
+msgid "The &#8220;slug&#8221; is the URL-friendly version of the name. It is used as an identificator, and is unchangeable. It is usually all lowercase and it must contains only letters, numbers, and underscores."
+msgstr "El &#8220;slug&#8221; es la versión URL amigable del nombre."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1531
+msgid "Field type"
+msgstr "Tipo de campo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1561
+msgid "Field description"
+msgstr "Descripción del campo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1563
+msgid "The description is not prominent by default; however, some themes may show it."
+msgstr "La descripción no es prominente por defecto, sin embargo, algunos temas pueden mostrarlo."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1569
+msgid "For multiple default values in multiple select and multiple checkboxes, use | as separator."
+msgstr "Para valores múltiples en selecciones múltiples y checkboxes múltiples, utilice | como separador"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1575
+msgid "Options used in select, radio and multiple checkboxes. Enter one value per line, in the format key|label. The key is the value that will be stored in the database. The label is optional, and the key will be used as the label if no label is specified. For file fields, this indicates allowed extensions (one per line without dot)"
+msgstr "Las opciones usadas en selects, radios y checkboxes múltiples. Entre un valor por línea, en el formato llave|etiqueta. La llave es el valor que se almacenará en la base de datos. La etiqueta es opcional, y la llave será usada como etiqueta si no hay etiqueta especificada. Para los campos de archivo, esto indica extensiones permitidas (una por línea sin punto)."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1589
+msgid "Save changes"
+msgstr "Salvar cambios"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1590
+msgid "Delete field"
+msgstr "Eliminar campos"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1621
+msgid "Default Form settings"
+msgstr "Ajustes de formulario por defecto"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1668
+msgid "Success message"
+msgstr "Mensaje satisfactorio"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1669
+msgid "Error message"
+msgstr "Mensaje de error"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1670
+msgid "Emails from"
+msgstr "Emails de"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1671
+msgid "Admin emails to"
+msgstr "Emails de admin a"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1672
+msgid "Emails bcc"
+msgstr "Emails de copia oculta"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1673
+msgid "Admin email subject"
+msgstr "Asunto del email de admin "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1674
+msgid "Admin email message"
+msgstr "Mensaje del email de admin "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1675
+msgid "Confirmation email subject"
+msgstr "Asunto del email de confirmación"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1676
+msgid "Confirmation email message"
+msgstr "Mensaje del email de confirmación"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1704
+msgid "2 On-screen error message"
+msgstr "2. Mensaje de error en pantalla"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1742
+msgid "4. Email confirmation to the person who completed the form"
+msgstr "4. Confirmación del email para la persona que ha completado el formulario"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1764
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1792
+msgid "File upload default settings"
+msgstr "Configuración por defecto de la subida de archivos "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1766
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1793
+msgid "Valid extensions"
+msgstr "Extensiones válidas"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1767
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1794
+msgid "List of valid extensions, without dot, one per line."
+msgstr "Listado de las extensiones válidas, sin punto, una por línea "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1769
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1796
+msgid "Maximum file size:"
+msgstr "Tamaño máximo del archivo"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1770
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1797
+msgid "You can use suffix K, M or G for kilobyte, megabyte or gigabyte."
+msgstr "Usted puede utilizar los sufijos K, M o G para Kilobyte, Megabyte o Gigabyte"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1774
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1801
+msgid "This value is limited by server upload limits of "
+msgstr "Este valor está limitado por los límites de subida del servidor"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1776
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1803
+msgid "If you need a greater limit you should ask to the server administrator."
+msgstr "Si usted necesita un límite mayor póngase en contacto con el administrador del servidor"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1781
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1807
+msgid "Upload path"
+msgstr "Subir camino"
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1782
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:1808
+msgid "If it stars with "
+msgstr "Si comienza con un "
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2004
+msgid "Attention: '%element%' must contain an email address."
+msgstr "Atención: '%element%' debe contener una dirección de email."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2023
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2035
+msgid "Attention: '%element%' is a required field."
+msgstr "Atención: '%element%' es un campo obligatorio."
+
+#: D:\Accua
+#: 07_08\27_06_2013\accua-forms/accua-forms.php:2039
+msgid "Attention: Passwords are required fields."
+msgstr "Atención: La contraseña es un campo requerido. "
+
+msgid "Error moving submissions to trash."
+msgstr "Error moviendo envíos a la papelera de reciclaje."
+
+msgid "Moved 1 submission to trash."
+msgstr "Movido 1 envío a la papelera de reciclaje."
+
+msgid "Moved %res submissions to trash."
+msgstr "Movido %res envíos a la papelera de reciclaje."
+
+msgid "No submission selected."
+msgstr "No hay envíos seleccionados."
+
+msgid "The following @errorsize errors were found:"
+msgstr "Los siguientes @errorsize errores se encontraron:"
+
+msgid "File already submitted."
+msgstr "El archivo se subió."
+
+#
+msgid "Maximum filesize: %size%. Allowed extensions: %extensions%."
+msgstr "Tamaño máximo: %size%. Extensiones permitidas: %extensions%."
+
+#
+msgid "Upload failed, please retry. If the problem persists please contact us"
+msgstr "Fallo al subir el archivo, por favor vuelva a intentar. Si el problema persiste, póngase en contacto con nosotros"
+
+#
+msgid "Uploaded file is too big"
+msgstr "El archivo subido es demasiado grande"
+
+#
+msgid "File name is not valid. Please rename it avoiding unusual characters"
+msgstr "El nombre del archivo no es válido. Por favor renombre y evite los caracteres inusuales"
+
+#
+msgid "File extension not allowed. Allowed extensions are %extensions%"
+msgstr "Las extensiones del archivo no están permitidas. Las extensiones permitidas son %extensions%"
+
+msgid "Error: '%element%' is a required field."
+msgstr "Error: '%element%' es un campo obligatorio."
+
+msgid "Error: '%element%' must contain an email address."
+msgstr "Error: '%element%' debe contener una dirección de email."
+
+msgid "Attention: Your passwords do not match."
+msgstr "Atención: Su contraseña no coincide."
+
+msgid "Unable to submit the form, please retry"
+msgstr "Imposible de enviar su formulario, por favor inténtelo de nuevo"
+
+msgid "Please fill in all required fields"
+msgstr "Por favor llene todos los campos obligatorios"
+
+msgid "Please enter a valid email address where required"
+msgstr "Por favor entre una dirección de email válida donde sea requerido"
+
+msgid "Please select a form"
+msgstr "Por favor seleccione un formulario"
+
+msgid "Forms Stats"
+msgstr "Estadísticas del Formulario"
+
+msgid "Preview is updated when you click on \"Save settings\" button"
+msgstr "La vista previa está actualizada cuando usted hace clic en el botón \"Salvar configuración\" "
+
+msgid "Export visible columns to Excel"
+msgstr "Exportar columnas visibles al Excel"
+
+msgid "Export all columns to Excel"
+msgstr "Exportar todas las columnas al Excel"
+
+msgid "Use the orange %img_c button in the TinyMCE editor to include the forms in posts, pages or other content types (shortcode and php functions also available)"
+msgstr "Usar el botón naranja %img_c en el editor TinyMCE para incluir los formularios en los posts, páginas u otros tipos de contenido (los códigos cortos y las funciones php también están disponibles)"
+
+msgid "Submissions from all forms"
+msgstr "Envío de todos los formularios"
+
+msgid "No forms submitted"
+msgstr "No se enviaron los formularios"
+
+msgid "Default style"
+msgstr "Estilo por defecto"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Confirm password"
+msgstr "Confirmar contraseña"
+
+msgid "Background color"
+msgstr "Color de fondo"
+
+msgid "Margin"
+msgstr "Margen"
+
+msgid "Border width"
+msgstr "Tamaño del borde"
+
+msgid "Border color"
+msgstr "Color del borde"
+
+msgid "Padding"
+msgstr "Espacio interior"
+
+msgid "Font size"
+msgstr "Tamaño de la fuente"
+
+msgid "Rounded corner radius"
+msgstr "Radio de la esquina redondeada"
+
+msgid "Text color"
+msgstr "Color de texto"
+
+msgid "Spacing"
+msgstr "Espaciado"
+
+msgid "Layout &amp; Styling"
+msgstr "Diseño y Estilo"
+
+msgid "Customize the look and feel of your forms. Leave fields empty if you wish to use the native styles of your WordPress Theme."
+msgstr "Personalice la apariencia de sus formularios. Deje campos vacíos si usted desea usar los estilos nativos de su Tema de WordPress."
+
+msgid "The reCATPCHA response provided was incorrect.  Please re-try."
+msgstr "La respuesta del reCATPCHA proveída fue incorrecta. Por favor re inténtelo."
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Color picker"
+msgstr "Selector de color"
+
+msgid "Date picker"
+msgstr "Selector de fecha"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Fieldset begin"
+msgstr "Comienzo del conjunto de campos"
+
+msgid "You can use this multiple times."
+msgstr "Usted puede usar esto varias veces."
+
+msgid "Fieldset end"
+msgstr "Fin del conjunto de campos"
+
+msgid "Move to trash"
+msgstr "Mover a papelera de reciclaje"
+
+msgid "Forms deleted"
+msgstr "Formularios borrados"
+
+msgid "Error restoring submissions."
+msgstr "Error restaurando envíos."
+
+msgid "Restored 1 submission."
+msgstr "Restaurado 1 envío."
+
+msgid "Restored %res submissions."
+msgstr "Restaurados %res envíos."
+
+#~ msgid "Delete"
+#~ msgstr "Cancella"
+
+#~ msgid "Bulk Actions"
+#~ msgstr "Modifica di massa"
+
+#~ msgid "Move to Trash"
+#~ msgstr "Sposta nel cestino"
+
+#~ msgid "Apply"
+#~ msgstr "Applica"
+
+#~ msgid "Forms"
+#~ msgstr "Form"
+
+#~ msgid "Use AJAX"
+#~ msgstr "Usa AJAX"

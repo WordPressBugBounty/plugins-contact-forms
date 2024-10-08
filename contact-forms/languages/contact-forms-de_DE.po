@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2011-12-21 10:18+0100\n"
+"Last-Translator: Francesco <francesco.morel@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+
+#: classes/Error/Standard.php:5
+#: classes/Error/Standard.php:39
+msgid "The following error was found:"
+msgstr "Der folgende Fehler wurde gefunden:"
+
+#: classes/Error/Standard.php:6
+#: classes/Error/Standard.php:41
+msgid "The following @errorsize errors were found:"
+msgstr "Die folgenden @errorsize Fehlern wurden gefunden:"
+
+#: classes/Element/File.php:11
+msgid "File already submitted."
+msgstr "File schon geschickt."
+
+#: classes/Element/File.php:12
+msgid "Maximum filesize: %size%. Allowed extensions: %extensions%."
+msgstr "Höchste Dimension: %size%. Zulässige Erweiterung: %extensions%."
+
+#: classes/Element/File.php:14
+msgid "Upload failed, please retry. If the problem persists please contact us"
+msgstr "Laden gescheiert, versuchen Sie wieder. Wenn das Problem verharrt, kontaktieren Sie uns bitte"
+
+#: classes/Element/File.php:15
+msgid "Uploaded file is too big"
+msgstr "Das geladete File ist zu größ"
+
+#: classes/Element/File.php:16
+msgid "Uploaded file is empty"
+msgstr "Das geladete File ist leer"
+
+#: classes/Element/File.php:17
+msgid "File name is not valid. Please rename it avoiding unusual characters"
+msgstr "File Name ist nicht gültig. Nennen Sie das wieder und vermeiden Sie Sonderzeichen, bitte"
+
+#: classes/Element/File.php:18
+msgid "File extension not allowed. Allowed extensions are %extensions%"
+msgstr "File Erweiterung nicht erlaubt. Die zulässige Erweiterungen sind: %extensions%."
+
+#: classes/Validation/Required.php:4
+msgid "Error: '%element%' is a required field."
+msgstr "Fehler: '%element%' ist ein notwendiges Feld"
+
+#: classes/Validation/Email.php:4
+msgid "Error: '%element%' must contain an email address."
+msgstr "Fehler: '%element%' muss eine E-Mail Adresse enthalten"
+
+msgid "Please fill in all required fields"
+msgstr "Bitte füllen Sie alle Felder aus"

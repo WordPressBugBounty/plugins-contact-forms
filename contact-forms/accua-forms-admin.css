@@ -1,0 +1,499 @@
+input[type="text"].accua_form_value, textarea.accua_form_value {
+  width: 95%;
+  margin-right: 5%;
+}
+
+#accua_forms_edit_page .sidebar-name-arrow {
+  display: none !important;
+}
+/*
+#accua_forms_edit_page #widgets-left .widget-holder, #accua_forms_edit_page #widgets-right .widgets-sortables {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  height: 400px;
+  min-height: 400px;
+}*/
+
+#accua_forms_edit_page .widget-liquid-left {
+  width: 100% !important;
+}
+
+#accua_forms_edit_page #widgets-left .widget {
+  width: 98% !important;
+  margin-bottom: 7px !important;
+  float: none !important;
+}
+
+.accua-form-widget-scroll-wrapper {
+  width: 100% !important;
+}
+
+.accua-form-widget-scroll-wrapper .ui-resizable-handle, #accua_form_preview_area_wrapper .ui-resizable-handle {
+  background: #ddd;
+  bottom: -10px;
+  height: 7px;
+  border-radius: 3px;
+}
+
+.accua-form-widget-scroll-wrapper.ui-resizable > *:first-child {
+  /*min-height: auto !important;
+  height: 100% !important;
+  max-height: none !important;*/
+  width: auto !important;
+  /*overflow-y: scroll !important;
+  overflow-x: hidden !important;*/
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.accua-form-widget-scroll-wrapper > *:first-child p.description {
+  padding-top: 5px;
+}
+
+#accua_forms_edit_page #widgets-right a.widget-action {
+  display: inline-block;
+  color: #555d66;
+  padding: 0;
+}
+
+#accua_forms_edit_page #widgets-right a.widget-action, #accua_forms_edit_page #widgets-right a.widget-action:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  text-decoration: none;
+}
+
+#accua_forms_edit_page #widgets-right a.widget-action:focus,
+#accua_forms_edit_page #widgets-right a.widget-action:active,
+#accua_forms_edit_page #widgets-right a.widget-action:hover,
+#accua_forms_edit_page #widgets-right a.widget-action:visited {
+  color: #23282d;
+}
+
+#accua_forms_edit_page #widgets-right a.widget-action:after {
+  padding: 1px 2px 1px 0 !important;
+  margin-top: 10px;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  right: 0;
+  content: "\f140";
+  border: none;
+  background: 0 0;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  display: block;
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none!important;
+}
+
+#accua_forms_edit_page #widgets-right a.widget-action:focus:after {
+  -webkit-box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30,140,190,.8);
+  box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30,140,190,.8);
+}
+
+#accua_forms_edit_page .sidebar-name {
+  cursor: auto !important;
+}
+
+#icon-contact-forms-cimatti-logo {
+    background: url("img/cimatti-icon-32.png") no-repeat scroll 0 0 transparent;
+}
+
+
+/* tabs */
+#accua_tabs #ul_accua_tabs li.ui-state-active  a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#accua_tabs #ul_accua_tabs li {
+  display: inline;
+  font-size: 13px;
+  line-height: 37px;
+  margin: 0 10px 0 0;
+  padding: 12px 15px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-top: 1px solid #EEEEEE;
+}
+
+#accua_tabs #ul_accua_tabs li a {
+  color:#bbb;
+  text-decoration:none;  
+}
+
+#accua_tabs #ul_accua_tabs li.ui-state-active {
+  background: #fff;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+#accua_tabs .content_tab {
+  background: #fff;
+  border: 0px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  min-height: 300px;
+}
+
+#accua_form_use_ajax .accua_form_value {
+    margin-right: 6px;
+}
+
+#accua_form_use_ajax, #accua_form_layout {
+    clear: both;
+    line-height: 25px;
+}
+
+#accua_form_layout {
+  margin-right: 50px;
+  margin-bottom: 9px;
+}
+
+#accua_forms_edit_page #accua_tabs {
+  position: relative;
+  margin-top: 20px;
+}
+
+.accua-forms-metabox-holder {
+   float: left;
+   margin-right: 2%;
+   width: 47%;
+}
+
+.accua_forms_save_settings_top {
+    float: right;
+    margin-right: 30px;
+    width: 400px;
+}
+
+#accua_forms_edit_page #accua_form_save_settings {
+  float: left;
+  margin-right: 6px;
+}
+
+#accua_forms_edit_page form#delete_form {
+    float: right;
+    margin-left: 6px;
+}
+
+#accua_forms_edit_page form#delete_form input {
+    background: none;
+    border: none;
+    color: red;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+#accua_forms_edit_page form#delete_form input:hover {
+  background:red;
+  color:#fff;
+}
+
+#accua_tab_messages .defalut_content_message,
+#accua_tab_preview .defalut_content_message {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+#accua_tab_messages .defalut_message,
+#accua_tab_preview .defalut_message {
+  padding-top:20px;
+}
+
+#accua_tab_messages #dashboard_right_now a.insert-media,
+#accua_tab_preview #dashboard_right_now a.insert-media {
+    float: none;
+    top: 0;
+}
+
+#accua_tab_messages .wp-editor-wrap,
+#accua_tab_preview  .wp-editor-wrap {
+    margin-top: 10px;
+}
+
+#accua_tab_messages .label_input,
+#accua_tab_preview .label_input {
+    display: block;
+    line-height: 27px;
+    margin-bottom: 9px;
+    width: 100%;
+    float: left;
+}
+
+#accua_tab_messages .label_input label,
+#accua_tab_preview .label_input label {
+    float: left;
+    margin-right: 10px;
+    width: 20%;
+}
+
+#accua_tab_messages .label_input input.accua_form_value[type="text"],
+#accua_tab_preview .label_input input.accua_form_value[type="text"] {
+    float: left;
+    width: 45%;
+}
+
+#accua_tab_messages input.accua_form_check_override[type="checkbox"],
+#accua_tab_preview input.accua_form_check_override[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#accua_tab_messages input.accua_form_check_override[value="1"][type="radio"], #accua_tab_messages input.accua_form_check_override[value="-1"][type="radio"] {
+    margin-left: 20px;
+}
+
+#accua_tab_messages .accua_form_value[disabled],
+#accua_tab_preview .accua_form_value[disabled] {
+    color: #BBBBBB;
+}
+
+#accua_tab_messages .default_value,
+#accua_tab_preview .default_value {
+    border: 1px solid #ddd;
+    color: #999;
+    float: left;
+    line-height: 22px;
+    min-height: 21px;
+    margin: 1px 5% 1px 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 43%;
+}
+
+#accua_tab_preview .wp-picker-container {
+    border: 1px solid transparent;
+    float: left;
+    margin: 1px 5% 1px 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 43%;
+}
+
+#accua_tab_messages .postbox {
+    min-height: 400px;
+}
+
+#accua-forms-list-filter th.column-submissions a span {
+  float:none;
+}
+
+#accua-forms-list-filter th.column-submissions .sorting-indicator {
+  float:right;
+}
+
+#accua_form_preview_area_wrapper {
+    position: relative;
+    width: 100%;
+    overflow: unset;
+}
+
+#accua_form_preview_area_wrapper .ui-resizable-handle.ui-resizable-s{
+    display: none !important;
+}
+
+#accua_form_preview_area {
+   /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;*/
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#accua_forms_edit_page #dialog_token {
+   padding: 0 20px 20px;
+}
+
+#accua_forms_edit_page .defalut_content_message {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ /*noinspection CssInvalidPropertyValue*/
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.accua_forms_admin_page textarea {
+  resize: vertical;
+}
+/*
+.widget-content p{
+    width: 47%;
+    float: left;
+    margin-right: 5px;
+}
+*/.widget-title h3, .widget-title h4 {
+      padding: 10px;
+      font-size: 14px;
+      white-space: unset;
+  }
+
+.widget-control-remove.delete{
+    color: #b32d2e;
+}
+
+
+.accua_form_save_settings_status{
+    width: 100%;
+}
+
+.savedsettings{
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    margin: 5px 0 15px;
+    padding: 15px 15px;
+    display: block;
+    width: 98%;
+    border-left-color: #00a32a;
+}
+.error_savedsettings{
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    margin: 5px 0 15px;
+    padding: 15px 15px;
+    display: block;
+    width: 98%;
+    border-left-color: #b32d2e;
+}
+
+
+.widgets-holder-wrap.dashed{
+    border: 2px dashed #c3c4c7;
+}
+.widgets-holder-wrap.dashed h3 {
+    padding: 20px !important;
+}
+.widgets-holder-wrap.dashed .widgets-sortables.ui-sortable {
+    margin-bottom: 22px !important;
+}
+
+#accua_form_save_settings_inside{
+    float: right;
+}
+
+#accua_tab_customise .accua_form_value[type="text"]{
+    width: 67%;
+    float: right;
+}
+#accua_tab_customise .wp-picker-input-wrap .accua_form_value[type="text"]{
+    width: 100%;
+    float: right;
+}
+#accua_tab_customise .wp-color-result-text{
+    display: none;
+}
+#accua_tab_customise .label_input {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+#accua_tab_customise .label_container{
+    min-height: 35px;
+    vertical-align: middle;
+}
+#accua_tab_customise .default_value{
+    display: none !important;
+}
+#accua_tab_customise .wp-picker-container {
+    display: inline-block;
+    margin-left: 42px;
+}
+
+
+#accua_tabs2 li{
+    display: inline;
+    font-size: 13px;
+    line-height: 37px;
+    margin: 0 10px 0 0;
+    padding: 12px 15px;
+    background: #fff;
+}
+
+/* note */
+
+input#delete-sub-data, input#delete-note {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+input#delete-note {
+    display: inline-block;
+}
+.system-note .note_content {
+    padding: 10px;
+    background: #efefef;
+    position: relative;
+    line-height: 18px;
+    font-size: 14px;
+}
+.system-note .note_content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: #efefef transparent;
+}
+.system-note p.meta, form#delete-note {
+    padding: 10px;
+    color: #999;
+    margin: 0;
+    display: inline-block;
+}
+form#delete-note {
+    padding: 0;
+}
+
+.metabox-holder.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.accua-forms-select-lead-status-progress {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    background-size: 2em 2em;
+    background-repeat: no-repeat;
+}
+
+.accua-forms-select-lead-status-throbber {
+    background-image: url("img/material_throbber.svg");
+}
+
+.accua-forms-select-lead-status-cancel {
+    background-image: url("img/material_cancel.svg");
+}
+
+.accua-forms-select-lead-status-check {
+    background-image: url("img/material_check.svg");
+}
+
+th#lead_status {
+    width: 200px;
+}
