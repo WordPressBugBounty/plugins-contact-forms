@@ -2,8 +2,8 @@
 Contributors: cimatti
 Tags: contact, form, forms, contact form, contact forms, feedback, mail, email, ajax, attachment, curriculum, contact us, custom form, excel, form builder, web form, feedback, form manager, form to email, form to database, landing page, file upload, email form, customer request, spare parts, invitations, event forms, qtranslate, w3 total cache, drag and drop, form framework, form designer, form creator, php form builder
 Requires at least: 3.5
-Tested up to: 6.5.2
-Stable tag: 1.9.2
+Tested up to: 6.7.1
+Stable tag: 1.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,7 +49,7 @@ WordPress Contact Forms utilizes a PHP form builder class to generate the forms,
 4. Edit posts (or pages or custom types) and add the desired form using the "C" button in the visual editor (or using the shortcode.
 
 == Frequently Asked Questions ==
-You'll find the [FAQ on our website](http://www.cimatti.it/wordpress/contact-forms/faq/).
+You'll find the [FAQ on our website](http://www.cimatti.it/en/wordpress-plugins/contact-forms/faq/).
 
 = Where do I report security bugs found in this plugin? =
 Please report security bugs found in the source code of the
@@ -70,6 +70,10 @@ notify the developers of this plugin.
 9. Settings Page. Set up default options for all forms to avoid repetition. 
 
 == Changelog ==
+= 1.9.3 =
+* Matomo support for tracking field filled in and form submissions as events
+* Fixed CSRF vulnerability
+
 = 1.9.2 =
 * Reverted an incorrect fix in the previous version
 

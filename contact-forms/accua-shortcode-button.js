@@ -23,7 +23,7 @@
 				longname : 'WordPress Contact Forms by Cimatti',
 				author : 'Cimatti',
 				authorurl : 'http://www.cimatti.it',
-				infourl : 'http://www.cimatti.it/wordpress/contact-forms/',
+				infourl : 'http://www.cimatti.it/en/wordpress-plugins/contact-forms/',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}

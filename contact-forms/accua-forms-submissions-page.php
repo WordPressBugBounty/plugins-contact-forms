@@ -321,76 +321,79 @@ class Accua_Forms_Submissions_List_Table extends WP_List_Table {
 
     }
 
-    function process_bulk_action() {
+    function process_bulk_action(){
       $current_action = $this->current_action();
-      if('delete'=== $current_action) {
-        $trashed = array();
-        if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
-          foreach($_GET['submission'] as $i) {
-            $i = (int) $i;
-            $trashed[$i] = $i;
-          }
-        }
-        if ($trashed) {
-          $trashed = implode(',',$trashed);
-          global $wpdb;
-          $res = $wpdb->query("UPDATE `{$wpdb->prefix}accua_forms_submissions` SET afs_status = -1 WHERE afs_id in ( $trashed )");
-          if ($res === false) {
-            $this->set_message(__("Error moving submissions to trash.", 'contact-forms').'<br />');
-          } else if ($res == 1) {
-            $this->set_message(__("Moved 1 submission to trash.", 'contact-forms').'<br />');
-          } else {
-            $this->set_message(strtr(__("Moved %res submissions to trash.", 'contact-forms'), array('%res' => $res)).'<br />');
-          }
-        } else {
-          $this->set_message(__("No submission selected.", 'contact-forms').'<br />');
-        }
-      } else if('shred'=== $current_action) {
-        $shredded = array();
-        if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
-          foreach($_GET['submission'] as $i) {
-            $i = (int) $i;
-            $shredded[$i] = $i;
-          }
-        }
-        if ($shredded) {
-          $shredded = implode(',',$shredded);
-          global $wpdb;
-          $res = $wpdb->query("DELETE FROM `{$wpdb->prefix}accua_forms_submissions` WHERE afs_id in ( $shredded )");
-          if ($res === false) {
-            $this->set_message(__("Error deleting submissions.", 'contact-forms').'<br />');
-          } else {
-            $res2 = $wpdb->query("DELETE FROM `{$wpdb->prefix}accua_forms_submissions_values` WHERE afsv_sub_id in ( $shredded )");
-            if ($res == 1) {
-              $this->set_message(__("Deleted 1 submission.", 'contact-forms').'<br />');
-            } else {
-              $this->set_message(strtr(__("Deleted %res submissions.", 'contact-forms'), array('%res' => $res)).'<br />');
+      if ($current_action) {
+        check_admin_referer('bulk-submissions'); //check nonce generated for 'bulk-'.$this->_args['plural']
+        if ('delete' === $current_action) {
+          $trashed = array();
+          if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
+            foreach ($_GET['submission'] as $i) {
+              $i = (int)$i;
+              $trashed[$i] = $i;
             }
           }
-        } else {
-          $this->set_message(__("No submission selected.", 'contact-forms').'<br />');
-        }
-      } else if('restore'=== $current_action) {
-        $restored = array();
-        if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
-          foreach($_GET['submission'] as $i) {
-            $i = (int) $i;
-            $restored[$i] = $i;
-          }
-        }
-        if ($restored) {
-          $restored = implode(',',$restored);
-          global $wpdb;
-          $res = $wpdb->query("UPDATE `{$wpdb->prefix}accua_forms_submissions` SET afs_status = 0 WHERE afs_id in ( $restored )");
-          if ($res === false) {
-            $this->set_message(__("Error restoring submissions.", 'contact-forms').'<br />');
-          } else if ($res == 1) {
-            $this->set_message(__("Restored 1 submission.", 'contact-forms').'<br />');
+          if ($trashed) {
+            $trashed = implode(',', $trashed);
+            global $wpdb;
+            $res = $wpdb->query("UPDATE `{$wpdb->prefix}accua_forms_submissions` SET afs_status = -1 WHERE afs_id in ( $trashed )");
+            if ($res === false) {
+              $this->set_message(__("Error moving submissions to trash.", 'contact-forms') . '<br />');
+            } else if ($res == 1) {
+              $this->set_message(__("Moved 1 submission to trash.", 'contact-forms') . '<br />');
+            } else {
+              $this->set_message(strtr(__("Moved %res submissions to trash.", 'contact-forms'), array('%res' => $res)) . '<br />');
+            }
           } else {
-            $this->set_message(strtr(__("Restored %res submissions.", 'contact-forms'), array('%res' => $res)).'<br />');
+            $this->set_message(__("No submission selected.", 'contact-forms') . '<br />');
           }
-        } else {
-          $this->set_message(__("No submission selected.", 'contact-forms').'<br />');
+        } else if ('shred' === $current_action) {
+          $shredded = array();
+          if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
+            foreach ($_GET['submission'] as $i) {
+              $i = (int)$i;
+              $shredded[$i] = $i;
+            }
+          }
+          if ($shredded) {
+            $shredded = implode(',', $shredded);
+            global $wpdb;
+            $res = $wpdb->query("DELETE FROM `{$wpdb->prefix}accua_forms_submissions` WHERE afs_id in ( $shredded )");
+            if ($res === false) {
+              $this->set_message(__("Error deleting submissions.", 'contact-forms') . '<br />');
+            } else {
+              $res2 = $wpdb->query("DELETE FROM `{$wpdb->prefix}accua_forms_submissions_values` WHERE afsv_sub_id in ( $shredded )");
+              if ($res == 1) {
+                $this->set_message(__("Deleted 1 submission.", 'contact-forms') . '<br />');
+              } else {
+                $this->set_message(strtr(__("Deleted %res submissions.", 'contact-forms'), array('%res' => $res)) . '<br />');
+              }
+            }
+          } else {
+            $this->set_message(__("No submission selected.", 'contact-forms') . '<br />');
+          }
+        } else if ('restore' === $current_action) {
+          $restored = array();
+          if ((!empty($_GET['submission'])) && is_array($_GET['submission'])) {
+            foreach ($_GET['submission'] as $i) {
+              $i = (int)$i;
+              $restored[$i] = $i;
+            }
+          }
+          if ($restored) {
+            $restored = implode(',', $restored);
+            global $wpdb;
+            $res = $wpdb->query("UPDATE `{$wpdb->prefix}accua_forms_submissions` SET afs_status = 0 WHERE afs_id in ( $restored )");
+            if ($res === false) {
+              $this->set_message(__("Error restoring submissions.", 'contact-forms') . '<br />');
+            } else if ($res == 1) {
+              $this->set_message(__("Restored 1 submission.", 'contact-forms') . '<br />');
+            } else {
+              $this->set_message(strtr(__("Restored %res submissions.", 'contact-forms'), array('%res' => $res)) . '<br />');
+            }
+          } else {
+            $this->set_message(__("No submission selected.", 'contact-forms') . '<br />');
+          }
         }
       }
     }
@@ -711,8 +714,8 @@ function accua_forms_submissions_list_page($head = false){
          <input type="hidden" name="page" value="<?php  if (isset($_REQUEST['page'])) { echo htmlspecialchars(stripslashes($_REQUEST['page'])); } ?>" />
          <input type="hidden" name="del" value="<?php  if (isset($_REQUEST['del'])) { echo htmlspecialchars(stripslashes($_REQUEST['del'])); } ?>" />
             <?php $listTable->display(); ?>
-        </form>
-        <?php /* <pre>$listTable = <?php echo htmlspecialchars(print_r($listTable, true)); ?></pre> */ ?>
+       </form>
+       <?php /* <pre>$listTable = <?php echo htmlspecialchars(print_r($listTable, true)); ?></pre> */ ?>
     </div>
 
     <?php

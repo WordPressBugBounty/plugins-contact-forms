@@ -46,6 +46,7 @@ add_action('wp_ajax_accua_form_submit', 'accua_form_ajax_submit_handler');
 add_action('wp_ajax_nopriv_accua_form_submit', 'accua_form_ajax_submit_handler');
 function accua_form_ajax_submit_handler(){
   header('Content-Type: text/html; charset='.get_option('blog_charset'));
+  header('Cache-Control: no-transform');
 
   echo '<html><head></head><body><pre id="accua-form-ajax-response">';
 

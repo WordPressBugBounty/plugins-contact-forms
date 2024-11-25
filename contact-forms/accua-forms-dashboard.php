@@ -401,7 +401,7 @@
       </div>
       <?php } ?>
 
-      <span id="accua-forms-version">by Cimatti - <a href="http://www.cimatti.it/wordpress/contact-forms/">www.cimatti.it/wordpress/contact-forms</a>
+      <span id="accua-forms-version">by Cimatti - <a href="https://www.cimatti.it/en/wordpress-plugins/contact-forms/">www.cimatti.it/en/wordpress-plugins/contact-forms</a>
         <br /><?php
         $plugin_data = get_plugin_data( ACCUA_FORMS_FILE );
         _e('Version', 'contact-forms'); echo " ".$plugin_data['Version'];

@@ -2501,7 +2501,7 @@ function accua_forms_settings_page() {
      </div>
 
      <div class="postbox ">
-       <h3 class="hndle"><span><?php _e( 'Track actions with Google Analytics', 'contact-forms'); ?></span></h3>
+       <h3 class="hndle"><span><?php _e( 'Track actions with Google Analytics and/or Matomo', 'contact-forms'); ?></span></h3>
        <div class="inside" id="dashboard_right_now">
          <p>
            <input type="checkbox" id="accua_form_analytics_track_submit" name="analytics_track_submit" class="accua_form_value" value="1" <?php if($analytics_data['analytics_track_submit']) { echo 'checked="checked"'; } ?> />

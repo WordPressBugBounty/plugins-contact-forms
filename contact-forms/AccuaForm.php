@@ -735,6 +735,11 @@ jQuery(function($) {
   var ga_track = {$js_ga_track} ;
   var ga_event, ga_submit_event, ga_field_event, ga_field_events_fired = {};
   ga_event = function(eventCategory, eventAction){
+    /* matomo */ 
+    if (window._mtm && (typeof window._mtm.push == 'function')) {
+      window._mtm.push({'event': 'ContactForms', 'eventAction': eventAction, 'eventCategory': eventCategory, 'eventLabel': ga_track.title});
+    }
+      
     if (typeof window.gtag == 'function') {
       window.gtag('event', eventAction, {'event_category': eventCategory, 'event_label': ga_track.title});
     } else if (window.dataLayer && (typeof window.dataLayer.push == 'function')) {

@@ -2,8 +2,8 @@
 /*
 Plugin Name: WordPress Contact Forms by Cimatti
 Description: Quickly create and publish forms in your WordPress powered website.
-Version: 1.9.2
-Plugin URI: https://www.cimatti.it/wordpress/contact-forms/
+Version: 1.9.3
+Plugin URI: https://www.cimatti.it/en/wordpress-plugins/contact-forms/
 Author: Cimatti Consulting
 Author URI: https://www.cimatti.it
 Text Domain: contact-forms
@@ -101,7 +101,7 @@ function  accua_contact_forms_dashboard_widget_news_handler() {
         </tr>
     </table>
     <br />
-    <span id="accua-forms-version"><a href="https://www.cimatti.it/wordpress/contact-forms/"><?php
+    <span id="accua-forms-version"><a href="https://www.cimatti.it/en/wordpress-plugins/contact-forms/"><?php
         $plugin_data = get_plugin_data( ACCUA_FORMS_FILE );
         _e('Version', 'contact-forms'); echo " ".$plugin_data['Version']; ?></a> | <a href="admin.php?page=accua_forms" title="Contact Forms Dashboard"><?php _e('Dashboard', 'contact-forms'); ?></a>
     </span>
@@ -537,7 +537,7 @@ Zimbabwe",
   }
 
   $form_data += array(
-    'success_message' => '<div style="padding: 0px 30px 10px; background-color: #f4f4f4; border: 1px solid #ddd;">
+    'success_message' => '<div style="padding: 0px 30px 10px; background-color: #fdfdfd; border: 1px solid #dfdfdf;">
 <h2>Thank you {first_name} {last_name},</h2>
 We have received your contact request. Check your inbox for the confirmation message.
 
@@ -550,7 +550,7 @@ Also check that the email you entered in the form (<strong>{email}</strong>) is 
 For other possible problems you may have encountered do not hesitate to contact us
 
 </div>',
-    'error_message' => '<div style="padding: 0px 30px 10px; background-color: #f4f4f4; border: 1px solid #ddd;">
+    'error_message' => '<div style="padding: 0px 30px 10px; background-color: #fdfdfd; border: 1px solid #dfdfdf;">
 <h2>Oops! Something went wrong.</h2>
 Internet is an awfully complex place and even though we take every precaution to make sure things run smoothly every once in a while things can go wrong that are not under our control.
 
@@ -572,7 +572,7 @@ For other possible problems you may have encountered do not hesitate to contact 
 <tbody>
 <tr>
 <td>
-<table style="padding: 10px; background-color: #f4f4f4; border: 1px solid #ddd; max-width:700px;" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+<table style="padding: 10px; background-color: #fdfdfd; border: 1px solid #dfdfdf; max-width:700px;" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
 <tbody>
 <tr valign="top">
 <td style="max-width:22px;"></td>
