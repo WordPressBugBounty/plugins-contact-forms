@@ -282,7 +282,7 @@ class Accua_Forms_Submissions_List_Table extends WP_List_Table {
                 case 'file' :
                   $fieldid = rawurlencode($row->afsv_field_id);
                   $filename = rawurlencode($row->afsv_value);
-                  $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$row->afsv_sub_id}&field={$fieldid}&file={$filename}";
+                  $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$row->afsv_sub_id}&field={$fieldid}&file={$filename}&nonce=" . wp_create_nonce('accua_forms_download_nonce');
                   if ($this->export_xls) {
                     $url .= '&html=1';
                   }

@@ -3448,7 +3448,8 @@ function accua_forms_form_submission_handler($submittedID, $submittedData, $form
               if ($form->renameFile($istance_id, "{$submission_id}_{$field_data['id']}_{$file['name']}")) {
                 $urlfield = rawurlencode($istance_data['istance_id']);
                 $urlfile = rawurlencode($value);
-                $file_download_url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$submission_id}&field={$urlfield}&file={$urlfile}";
+                $token = accua_forms_generate_download_token($submission_id);
+                $file_download_url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$submission_id}&field={$urlfield}&file={$urlfile}&nonce=" . wp_create_nonce('accua_forms_download_nonce')."&token={$token}";
               }
             }
             $replace_map[$istance_data['istance_id']] = $value;
@@ -3701,7 +3702,7 @@ function accua_forms_get_submission_data($subid, $options = array()){
         if ($options['file_format'] == 'url' || $options['file_format'] == 'link') {
           $fieldid = rawurlencode($row->afsv_field_id);
           $filename = rawurlencode($row->afsv_value);
-          $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$row->afsv_sub_id}&field={$fieldid}&file={$filename}";
+          $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$row->afsv_sub_id}&field={$fieldid}&file={$filename}&nonce=" . wp_create_nonce('accua_forms_download_nonce');
           if ($options['file_format'] == 'link'){
             $url = htmlspecialchars($url,ENT_QUOTES);
             $filename = htmlspecialchars($row->afsv_value,ENT_QUOTES);
@@ -3794,17 +3795,61 @@ function accua_forms_submissions_list_page_head(){
 
 }
 
+/* Generiamo token di sicurezza per poter accedere anche da anonimo - email */
+function accua_forms_generate_download_token($subid) {
+    $token = wp_generate_password(32, false); // Token casuale di 32 caratteri
+    update_post_meta($subid, '_accua_download_token', $token); // Salva il token associato all'invio
+    return $token;
+}
+
+/**
+ * Gestisce il download di un file inviato tramite un modulo.
+ *
+ * Questa funzione viene eseguita tramite una richiesta AJAX e permette agli utenti di scaricare
+ * un file precedentemente caricato con un modulo. Controlla i parametri della richiesta per verificare
+ * la presenza di un file associato a un determinato ID di invio e campo del modulo.
+ *
+ * - Se il parametro "html" è presente, genera una pagina HTML con un link di reindirizzamento automatico.
+ * - Recupera le informazioni del file dal database per verificarne l'esistenza.
+ * - Se il file esiste e può essere letto, restituisce il contenuto con gli appropriati header HTTP.
+ * - Se il file non viene trovato, restituisce un errore 404.
+ *
+ * Sicurezza:
+ * - Nonce
+ * - Utilizza `stripslashes_deep` per sanificare i dati in ingresso.
+ * - Protegge il database utilizzando `wpdb->prepare` per prevenire SQL Injection.
+ * - Determina il tipo MIME del file per un download sicuro.
+ * - Aggiunto token di verifica per utenti
+ */
+
 add_action('wp_ajax_accua_forms_download_submitted_file', 'accua_forms_download_submitted_file');
 add_action('wp_ajax_nopriv_accua_forms_download_submitted_file', 'accua_forms_download_submitted_file');
 function accua_forms_download_submitted_file(){
   $get = stripslashes_deep($_GET);
+  $token_valid = false;
+  if (isset($get['token']) && isset($get['subid'])) {
+    $subid = rawurlencode($get['subid']);
+    $saved_token = get_post_meta($subid, '_accua_download_token', true);
+    if ($get['token'] === $saved_token) {
+        $token_valid = true;
+    }
+  }
+  if(!$token_valid){ // token presente nell'email di riepilogo dei form - x utenti non loggati
+      // Check if the user has the necessary capabilities
+      if (!is_user_logged_in() || !current_user_can('manage_options')) {
+            wp_die(__('You do not have sufficient permissions to access this page.', 'contact-forms'));
+      }
+      if (!isset($get['nonce']) || !check_ajax_referer('accua_forms_download_nonce', 'nonce', false)) {
+        wp_die(__('Invalid security token.', 'contact-forms'));
+      }
+  }
   if (isset($get['subid'],$get['field'],$get['file'])) {
     if (!empty($get['html'])) {
       header("Content-type: text/html");
-      $subid = rawurlencode($get['subid']);
+      //$subid = rawurlencode($get['subid']);
       $fieldid = rawurlencode($get['field']);
       $filename = rawurlencode($get['file']);
-      $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$subid}&field={$fieldid}&file={$filename}";
+      $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$subid}&field={$fieldid}&file={$filename}&nonce=" . wp_create_nonce('accua_forms_download_nonce');
       $url = htmlspecialchars($url,ENT_QUOTES);
       $filename = htmlspecialchars($get['file'],ENT_QUOTES);
       die("<html><head><title>{$filename}</title><meta http-equiv='refresh' content='0;URL={$url}'></head><body><a href='{$url}'>{$filename}</a></body></html>");
