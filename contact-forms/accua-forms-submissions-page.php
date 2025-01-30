@@ -284,7 +284,9 @@ class Accua_Forms_Submissions_List_Table extends WP_List_Table {
                   $filename = rawurlencode($row->afsv_value);
                   $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$row->afsv_sub_id}&field={$fieldid}&file={$filename}&nonce=" . wp_create_nonce('accua_forms_download_nonce');
                   if ($this->export_xls) {
-                    $url .= '&html=1';
+                    /* imposto token segreto 32 caratteri */
+                    $token_xls = accua_forms_generate_download_token($row->afsv_sub_id);
+                    $url .= '&html=1&token='.$token_xls;
                   }
                   $url = htmlspecialchars($url,ENT_QUOTES);
                   $filename = htmlspecialchars($row->afsv_value,ENT_QUOTES);
@@ -300,6 +302,7 @@ class Accua_Forms_Submissions_List_Table extends WP_List_Table {
                 break;
                 case 'password':
                 case 'password-and-confirm':
+                case 'token':
                   $fielddata = '';
                 break;
                 default:

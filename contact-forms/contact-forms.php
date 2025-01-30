@@ -2,7 +2,7 @@
 /*
 Plugin Name: WordPress Contact Forms by Cimatti
 Description: Quickly create and publish forms in your WordPress powered website.
-Version: 1.9.4
+Version: 1.9.5
 Plugin URI: https://www.cimatti.it/en/wordpress-plugins/contact-forms/
 Author: Cimatti Consulting
 Author URI: https://www.cimatti.it
@@ -709,3 +709,14 @@ function _accua_forms_json_encode($item) {
   }
 }
 
+
+/* per ripulire eventuali token impostati nella versione 1.9.4 */
+function accua_forms_cleanup_meta_tokens() {
+  global $wpdb;
+  $post_ids = $wpdb->get_col("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = '_accua_download_token'");
+
+  if (!empty($post_ids)) {
+    $wpdb->query("DELETE FROM {$wpdb->postmeta} WHERE meta_key = '_accua_download_token'");
+  }
+}
+register_activation_hook(__FILE__, 'accua_forms_cleanup_meta_tokens');

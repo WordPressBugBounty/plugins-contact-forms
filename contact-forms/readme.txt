@@ -3,7 +3,7 @@ Contributors: cimatti
 Tags: contact form, form builder, email notifications, lead generation, form api
 Requires at least: 3.5
 Tested up to: 6.7.1
-Stable tag: 1.9.4
+Stable tag: 1.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,9 @@ notify the developers of this plugin.
 9. Settings Page. Set up default options for all forms to avoid repetition. 
 
 == Changelog ==
+= 1.9.5 =
+* Minor fixes to previous version fix
+
 = 1.9.4 =
 * Fixed vulnerability - Missing Authorization to Unauthenticated Form Submission Download
 

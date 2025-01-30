@@ -3797,9 +3797,41 @@ function accua_forms_submissions_list_page_head(){
 
 /* Generiamo token di sicurezza per poter accedere anche da anonimo - email */
 function accua_forms_generate_download_token($subid) {
+    global $wpdb;
     $token = wp_generate_password(32, false); // Token casuale di 32 caratteri
-    update_post_meta($subid, '_accua_download_token', $token); // Salva il token associato all'invio
-    return $token;
+    $table_name = $wpdb->prefix . 'accua_forms_submissions_values';
+
+    // Controlla se esiste già un token per questo sub_id
+    $existing_token = $wpdb->get_var($wpdb->prepare(
+        "SELECT afsv_value FROM $table_name WHERE afsv_sub_id = %d AND afsv_field_id = '_accua_download_token'",
+        $subid
+    ));
+    if ($existing_token) {
+        return $existing_token;
+    } else{
+        $wpdb->insert(
+            $table_name,
+            [
+                'afsv_sub_id'  => $subid,
+                'afsv_field_id' => '_accua_download_token',
+                'afsv_type'    => 'token',
+                'afsv_value'   => $token
+            ],
+            ['%d', '%s', '%s', '%s']
+        );
+        return $token;
+    }
+}
+
+function accua_forms_check_download_token($subid, $get_token) {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'accua_forms_submissions_values';
+
+    $saved_token = $wpdb->get_var($wpdb->prepare(
+        "SELECT afsv_value FROM $table_name WHERE afsv_sub_id = %d AND afsv_field_id = '_accua_download_token'",
+        $subid
+    ));
+    return isset($get_token) && $get_token === $saved_token;
 }
 
 /**
@@ -3827,15 +3859,15 @@ add_action('wp_ajax_nopriv_accua_forms_download_submitted_file', 'accua_forms_do
 function accua_forms_download_submitted_file(){
   $get = stripslashes_deep($_GET);
   $token_valid = false;
-  if (isset($get['token']) && isset($get['subid'])) {
+  if(isset($get['subid'])){
     $subid = rawurlencode($get['subid']);
-    $saved_token = get_post_meta($subid, '_accua_download_token', true);
-    if ($get['token'] === $saved_token) {
+  }
+  if (isset($get['token']) && $subid != '') {
+    if (accua_forms_check_download_token($subid, $get['token']) == 1) {
         $token_valid = true;
     }
   }
-  if(!$token_valid){ // token presente nell'email di riepilogo dei form - x utenti non loggati
-      // Check if the user has the necessary capabilities
+  if(!$token_valid && $subid != ''){ // token presente nell'email di riepilogo dei form - x utenti non loggati
       if (!is_user_logged_in() || !current_user_can('manage_options')) {
             wp_die(__('You do not have sufficient permissions to access this page.', 'contact-forms'));
       }
@@ -3844,12 +3876,15 @@ function accua_forms_download_submitted_file(){
       }
   }
   if (isset($get['subid'],$get['field'],$get['file'])) {
-    if (!empty($get['html'])) {
+    if (!empty($get['html'])) { /* export xls*/
       header("Content-type: text/html");
-      //$subid = rawurlencode($get['subid']);
+      $subid = rawurlencode($get['subid']);
       $fieldid = rawurlencode($get['field']);
       $filename = rawurlencode($get['file']);
       $url = admin_url('admin-ajax.php') . "?action=accua_forms_download_submitted_file&subid={$subid}&field={$fieldid}&file={$filename}&nonce=" . wp_create_nonce('accua_forms_download_nonce');
+      if(isset($get['token'])){
+          $url .= '&token='.$get['token'];
+      }
       $url = htmlspecialchars($url,ENT_QUOTES);
       $filename = htmlspecialchars($get['file'],ENT_QUOTES);
       die("<html><head><title>{$filename}</title><meta http-equiv='refresh' content='0;URL={$url}'></head><body><a href='{$url}'>{$filename}</a></body></html>");
